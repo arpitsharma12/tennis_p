@@ -30,7 +30,7 @@ function addMore() {
   document.getElementById("error").innerHTML = "";
   let name = document.getElementById("name").value;
   if (name == "") {
-    document.getElementById("error").innerHTML = "please enter value";
+    document.getElementById("error").innerHTML = "Please Enter Value";
   } else {
     AddP(name);
 
@@ -72,3 +72,7 @@ input.addEventListener("keyup", function (event) {
     addMore();
   }
 });
+
+input.addEventListener("keydown", function () {
+  document.getElementById("error").innerHTML = " ";
+})
