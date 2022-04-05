@@ -1,40 +1,62 @@
 body {
   font-family: sans-serif;
 }
+
 .container {
   padding: 10px;
 
-  width: 34%;
+  width: 26%;
   margin: auto;
 }
+
 .container .input {
-  width: 79%;
+  width: 66%;
   height: 20%;
+  position: relative;
+  margin-left: 26px;
 }
+
 .container .btn {
   width: 50px;
   height: 25px;
 }
+
 .container ul {
   padding: 80px;
+  padding-top: 0px;
+  padding-bottom: 13px;
 }
+
 .container li a {
   float: right;
   color: #000;
   text-decoration: none;
   font-weight: bold;
 }
+
 .container #error {
   font-size: 14;
 }
+
 .heading {
   text-align: center;
 }
+
 .dark-mode {
   background-color: black;
   color: white;
 }
-.mode{
-position:absolute;
-right: 0;
+
+.mode {
+  position: absolute;
+  right: 0;
+}
+
+#search {
+  position: relative;
+  margin-left: 108px;
+}
+
+.dark-mode li a {
+  color: white;
 }
