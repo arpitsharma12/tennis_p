@@ -1,15 +1,14 @@
 
+
+
 let arr = ["Roger", "Rafa", "Novak"];
 let rev = arr.reverse();
-
 rev.forEach(elem => AddP(elem));
-
 
 function AddP(name) {
   let box = document.getElementById("box");
+  
   let li = document.createElement("li");
-
-
   li.textContent = name[0].toUpperCase() + name.slice(1).toLowerCase();
   li.className = "list"
   let a = document.createElement("a");
@@ -23,6 +22,7 @@ function AddP(name) {
   } else {
     box.insertBefore(li, pos);
   }
+
 }
 
 function addMore() {
@@ -33,8 +33,6 @@ function addMore() {
     document.getElementById("error").innerHTML = "Please Enter Value";
   } else {
     AddP(name);
-
-
   }
   document.getElementById("name").value = "";
 }
@@ -44,14 +42,14 @@ btn.addEventListener("click", function (e) {
   let li = e.target.parentNode;
   box.removeChild(li);
 });
+
 function myfunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
 
-
 function searches() {
-  let input = document.getElementById('search').value
+  let input = document.getElementById('search').value;
   input = input.toUpperCase();
   let x = document.getElementsByClassName('list');
 
@@ -64,15 +62,23 @@ function searches() {
     }
   }
 }
-
-var input = document.getElementById("name");
+let input = document.getElementById('name');
 input.addEventListener("keyup", function (event) {
 
   if (event.key === `Enter`) {
-    addMore();
+    if (arr.includes(input.value)) {
+      document.getElementById("error").innerHTML = 'already exist';
+    }
+    else {
+      addMore();
+    }
   }
 });
-
 input.addEventListener("keydown", function () {
   document.getElementById("error").innerHTML = " ";
 })
+
+
+
+
+
