@@ -16,7 +16,7 @@ body {
 }
 
 .container .input {
-  width: 61%;
+  width: 58%;
   height: 20%;
   position: relative;
   margin-left: 8%;
@@ -47,7 +47,7 @@ body {
 .container #error {
   position: relative;
     top: 14px;
-    margin-left: 2vw;
+    margin-left: 3vw;
     color: red;
 }
 
@@ -55,7 +55,7 @@ body {
   position: relative;
   text-align: center;
   cursor: context-menu;
-    
+  font-size: 39px;
 }
 
 .dark-mode {
@@ -97,4 +97,21 @@ li:hover{
     
     
   }
+}
+.no player{
+  font-size: 20px;
+  font-weight: 600;
+  color:red;
+  margin-left: 30%;
+}
+
+
+
+.mode {
+  width: 40px;
+}
+
+.moon{
+  width: 24px;
+  height: 24px;
 }
